@@ -12,18 +12,15 @@
 
 // Starting array
 let array = [28, 43, -12, 30, 4, 0, 12]
-
+let newArr = []
 // Write your solution below:
 
 for(let i = 0; i < array.length; i++) {
     for(let j = 0; j < array.length; j++)
-    if(i + j === 0) {
-        console.log(true)
-    } else {
-        console.log(false)
-    }
+    if(array[i] + array[j] === 0 && i != j) {
+        newArr.push(1)
+} else {
+    newArr.push(0)
+    }    
 }
-
-// function addToZero() {
-
-// }
+console.log(newArr.includes(1))
