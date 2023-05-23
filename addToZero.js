@@ -24,3 +24,5 @@ for(let i = 0; i < array.length; i++) {
     }    
 }
 console.log(newArr.includes(1))
+
+// This took way longer than it needed to; remember to pseudocode!
